@@ -28,9 +28,10 @@ public class newOrderAlertActivity extends AppCompatActivity{
         final List<Commitment> commitments = new ArrayList<>();
         Intent onIntent = getIntent();
 
-        for (int i = 0; i < onIntent.getParcelableArrayListExtra("constant").size(); i++){
+        int c_size = onIntent.getParcelableArrayListExtra(Constant.KEY_COMMITMENTS).size();
+        for (int i = 0; i < c_size; i++){
             Commitment commitment = (Commitment) onIntent.
-                    getParcelableArrayListExtra("constant").get(i);
+                    getParcelableArrayListExtra(Constant.KEY_COMMITMENTS).get(i);
             commitments.add(commitment);
         }
 

@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity{
                                 .setContentText("Hello World!");
 // Creates an explicit intent for an Activity in your app
                 Intent resultIntent = new Intent(MainActivity.this, newOrderAlertActivity.class).
-                        putParcelableArrayListExtra("constant", (ArrayList<Commitment>) commitments);
+                        putParcelableArrayListExtra(Constant.KEY_COMMITMENTS, (ArrayList<Commitment>) commitments);
 
 // The stack builder object will contain an artificial back stack for the
 // started Activity.
