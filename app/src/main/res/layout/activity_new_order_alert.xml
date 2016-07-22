@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newOrderAlertActivity">
+
+    <include
+        layout="@layout/content_new_order_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:text="@string/your_bookings_on"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorGrey8"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="12-JULY-2016"/>
+
+    <ListView
+        android:id="@+id/engagement_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="250"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:background="@drawable/accept_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:text="@string/accept"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:text="@string/reject"
+        android:background="@drawable/reject_button"
+        />
+</LinearLayout>

@@ -3,16 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".newOrderAlertActivity"
-    android:layout_height="match_parent">
+    android:background="@color/colorPrimary"
+    tools:showIn="@layout/activity_new_order_alert"
+    >
 
     <TextView
         android:id="@+id/new_service_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:paddingTop="7dp"
-        android:paddingBottom="16dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="12dp"
         android:gravity="center"
         android:textColor="@android:color/white"
         android:textSize="16sp"
@@ -26,8 +28,8 @@
         android:layout_alignBottom="@+id/time_tv"
         android:paddingLeft="2dp"
         android:paddingRight="2dp"
-        android:background="@color/colorPrimary"
         android:src="@drawable/time"
+        android:contentDescription="@string/clock_icon"
         />
     <TextView
         android:id="@+id/date_tv"
@@ -36,12 +38,11 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/time_iv"
         android:layout_toEndOf="@+id/time_iv"
-        android:paddingTop="10dp"
+        android:paddingTop="8dp"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         android:textSize="16sp"
         android:text="12 SEPT 2016"
-        android:background="@color/colorPrimary"
         />
     <TextView
         android:id="@+id/time_tv"
@@ -50,12 +51,11 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/time_iv"
         android:layout_toEndOf="@+id/time_iv"
-        android:paddingBottom="10dp"
+        android:paddingBottom="8dp"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         android:textSize="22sp"
         android:text="11:30 AM"
-        android:background="@color/colorPrimary"
         />
 
     <ImageView
@@ -66,8 +66,8 @@
         android:layout_alignBottom="@+id/unit_area_tv"
         android:paddingLeft="2dp"
         android:paddingRight="2dp"
-        android:background="@color/colorPrimary"
         android:src="@drawable/area"
+        android:contentDescription="@string/area_icon"
         />
     <TextView
         android:id="@+id/area_tv"
@@ -76,12 +76,11 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/time_iv"
         android:layout_toEndOf="@+id/time_iv"
-        android:paddingTop="10dp"
+        android:paddingTop="8dp"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         android:textSize="28sp"
         android:text="1200"
-        android:background="@color/colorPrimary"
         />
     <TextView
         android:id="@+id/unit_area_tv"
@@ -90,23 +89,22 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/time_iv"
         android:layout_toEndOf="@+id/time_iv"
-        android:paddingBottom="10dp"
+        android:paddingBottom="8dp"
         android:textColor="@android:color/white"
         android:textSize="10sp"
         android:text="SQUARE FEET"
-        android:background="@color/colorPrimary"
         />
     <ImageView
         android:id="@+id/location_iv"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignTop="@+id/location_tv"
-        android:layout_alignBottom="@+id/address_line_2_tv"
+        android:layout_alignBottom="@+id/address_line_1_tv"
         android:paddingLeft="2dp"
         android:paddingRight="2dp"
         android:foregroundGravity="top"
-        android:background="@color/colorPrimary"
         android:src="@drawable/location"
+        android:contentDescription="@string/location_icon"
         />
     <TextView
         android:id="@+id/location_tv"
@@ -115,11 +113,10 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/time_iv"
         android:layout_toEndOf="@+id/time_iv"
-        android:paddingTop="10dp"
+        android:paddingTop="8dp"
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:text="T'Pot Cafe"
-        android:background="@color/colorPrimary"
         />
     <TextView
         android:id="@+id/address_line_1_tv"
@@ -131,7 +128,6 @@
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:text="Shivanta Road jaisa kuch address, Maivya Nagar"
-        android:background="@color/colorPrimary"
         />
     <TextView
         android:id="@+id/address_line_2_tv"
@@ -140,12 +136,11 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/time_iv"
         android:layout_toEndOf="@+id/time_iv"
-        android:paddingBottom="20dp"
+        android:paddingBottom="16dp"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         android:textSize="15sp"
         android:text="MALVIYA NAGAR, DELHI"
-        android:background="@color/colorPrimary"
         />
 
 </RelativeLayout>

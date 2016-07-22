@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Pest Control Seller App</string>
 
+    <!--TextView content-->
     <string name="new_service_request">NEW SERVICE REQUEST</string>
+    <string name="your_bookings_on">YOUR BOOKINGS ON</string>
+
+    <!--Button text-->
+    <string name="accept">ACCEPT</string>
+    <string name="reject">reject</string>
+
+    <!--Image description-->
+    <string name="clock_icon">Clock Icon</string>
+    <string name="area_icon">Area Icon</string>
+    <string name="location_icon">Location Icon</string>
 
 </resources>

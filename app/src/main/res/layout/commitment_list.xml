@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="12:30 PM"
+        />
+    <TextView
+        android:id="@+id/location_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:text="Some Restaurant"
+        />
+    <TextView
+        android:id="@+id/address_line_1_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:text="Some location, some other sub location, Location"
+        />
+    <TextView
+        android:id="@+id/address_line_2_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="MAIN AREA OF SERVICE"
+        />
+
+</LinearLayout>
