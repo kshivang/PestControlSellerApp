@@ -31,8 +31,7 @@ public class newOrderAlertActivity extends AppCompatActivity{
         int c_size = onIntent.getParcelableArrayListExtra(Constant.KEY_COMMITMENTS).size();
         for (int i = 0; i < c_size; i++){
             Commitment commitment = (Commitment) onIntent.
-                    getParcelableArrayListExtra(Constant.KEY_COMMITMENTS).get(i);
-            commitments.add(commitment);
+                    getParcelableArrayListExtra(Constant.KEY_COMMITMENTS).get(i); commitments.add(commitment);
         }
 
         ListView listView = (ListView) findViewById(R.id.engagement_lv);

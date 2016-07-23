@@ -36,7 +36,7 @@ public class Commitment implements Parcelable{
         return addressLine2;
     }
 
-    public Commitment(Parcel in){
+    public Commitment( Parcel in ){
         String[] data = new String[4];
 
         in.readStringArray(data);
