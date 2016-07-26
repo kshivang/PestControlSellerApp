@@ -1,62 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".newOrderAlertActivity">
 
-    <include
-        layout="@layout/content_new_order_alert"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="match_parent"
+        android:layout_above="@+id/accept_rl"
+        >
+        <include
+            android:id="@+id/navigation_header_container"
+            layout="@layout/content_new_order_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="4dp"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="14sp"
-        android:text="@string/your_bookings_on"/>
+        <TextView
+            android:id="@+id/outstand_date_tv"
+            android:layout_below="@+id/navigation_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:text="@string/your_bookings_on"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textColor="@color/colorGrey8"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:text="12-JULY-2016"/>
+        <TextView
+            android:layout_below="@+id/outstand_date_tv"
+            android:id="@+id/outstanding_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorGrey8"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="12-JULY-2016"/>
 
-    <ListView
-        android:id="@+id/engagement_lv"
+        <ListView
+            android:id="@+id/engagement_lv"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp"
+            />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/accept_rl"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="250"
-        android:paddingRight="16dp"
-        android:paddingLeft="16dp"
-        android:paddingBottom="8dp"
-        />
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_above="@+id/reject_bn"
+        >
+        <SeekBar
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/accept_sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:max="100"
+            android:progressDrawable="@android:color/transparent"
+            android:background="@drawable/accept_button"
+            android:thumbOffset="10dp"
+            android:thumb="@drawable/right_arrow_animation" />
+        <TextView
+            android:id="@+id/accept_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Swipe to accept"
+            />
+    </RelativeLayout>
 
     <Button
+        android:id="@+id/reject_bn"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="100"
-        android:background="@drawable/accept_button"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="5dp"
-        android:textColor="@android:color/white"
-        android:textSize="22sp"
-        android:text="@string/accept"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="75"
+        android:layout_height="50dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
@@ -65,4 +96,4 @@
         android:text="@string/reject"
         android:background="@drawable/reject_button"
         />
-</LinearLayout>
+</RelativeLayout>

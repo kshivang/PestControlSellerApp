@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "359502921752",
+    "firebase_url": "https://pestcontrolsellerapp.firebaseio.com",
+    "project_id": "pestcontrolsellerapp",
+    "storage_bucket": "pestcontrolsellerapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359502921752:android:47b0caa3d6637e73",
+        "android_client_info": {
+          "package_name": "com.adurcup.pestcontrolsellerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359502921752-becmnnhu1kfnk8ok7ic6tv6qam8oar74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_w4rXCuw_jl0a9jDnKbsVuCMNzzD2VVY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -10,18 +10,28 @@ import android.os.Parcelable;
  */
 
 public class Commitment implements Parcelable{
-    private String time, location, addressLine1, addressLine2;
+    private String date, time, area, location, addressLine1, addressLine2;
 
-    public Commitment(String time, String location,
+    public Commitment(String date, String time, String area, String location,
                       String addressLine1, String addressLine2){
+        this.date = date;
         this.time = time;
+        this.area = area;
         this.location = location;
         this.addressLine1 = addressLine1;
         this.addressLine2 = addressLine2;
     }
 
+    public String getDate() {
+        return date;
+    }
+
     public String getTime() {
         return time;
+    }
+
+    public String getArea() {
+        return area;
     }
 
     public String getLocation() {
@@ -37,13 +47,15 @@ public class Commitment implements Parcelable{
     }
 
     public Commitment( Parcel in ){
-        String[] data = new String[4];
+        String[] data = new String[6];
 
         in.readStringArray(data);
-        this.time = data[0];
-        this.location = data[1];
-        this.addressLine1 = data[2];
-        this.addressLine2 = data[3];
+        this.date = data[0];
+        this.time = data[1];
+        this.area = data[2];
+        this.location = data[3];
+        this.addressLine1 = data[4];
+        this.addressLine2 = data[5];
     }
 
     @Override
@@ -54,8 +66,8 @@ public class Commitment implements Parcelable{
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeStringArray(new String[] {
-                this.time, this.location,
-                this.addressLine1, this.addressLine2
+                this.date, this.time, this.area,
+                this.location, this.addressLine1, this.addressLine2
         });
     }
 

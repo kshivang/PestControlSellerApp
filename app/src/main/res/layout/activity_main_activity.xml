@@ -23,5 +23,12 @@
         android:textColor="@android:color/white"
         android:text="Activity"
     />
+    <TextView
+        android:id="@+id/reg_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_activity_bn"
+        android:layout_marginTop="16dp"
+        />
 
 </RelativeLayout>
